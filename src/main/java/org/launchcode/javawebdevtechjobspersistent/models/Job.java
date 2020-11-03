@@ -1,6 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -8,7 +9,7 @@ import java.util.List;
 public class Job extends AbstractEntity{
 
 
-    @NotNull
+
     @ManyToOne
     private Employer employer;
 
